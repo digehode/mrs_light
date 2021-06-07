@@ -1,4 +1,4 @@
-FROM ubuntu:cosmic
+FROM ubuntu
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 RUN apt-get -y install apache2

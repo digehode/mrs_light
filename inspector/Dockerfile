@@ -1,4 +1,4 @@
-FROM ubuntu:cosmic
+FROM ubuntu
 RUN ls
 RUN apt-get update
 RUN apt-get -y install netcat
@@ -11,6 +11,7 @@ RUN apt-get -y install iputils-ping
 RUN apt-get -y install nmap 
 
 RUN apt-get -y install tcpdump
+RUN apt-get -y install python
 
 RUN useradd -ms /bin/bash user
 RUN echo user:resu|chpasswd
